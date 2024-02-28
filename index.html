@@ -100,15 +100,35 @@
             opacity: 90%;
         }
         @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
             .container {
                 width: 90%;
+                padding: 20px;
+                top: 0;
+            }
+            .header {
+                transform: scale(1);
+                margin-bottom: 20px;
             }
             input[type="text"],
             input[type="password"] {
-                width: calc(100% - 20px);
+                width: 100%;
             }
             .reset-password {
-                margin-top: -15px;
+                margin-left: 0;
+                text-align: center;
+            }
+            .toggle-password {
+                margin-left: 0;
+                right: auto;
+                left: 10px;
+                top: auto;
+                bottom: 20px;
+            }
+            .alternative-login {
+                margin-top: 20px;
             }
         }
     </style>
